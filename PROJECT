@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: podreaper
 repo: github.com/abdullah599/PodReaper
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: podreaper.com
+  group: podreaper.com
+  kind: PodReaperConfig
+  path: github.com/abdullah599/PodReaper/api/v1alpha1
+  version: v1alpha1
 version: "3"

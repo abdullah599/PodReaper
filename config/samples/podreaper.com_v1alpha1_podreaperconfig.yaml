@@ -1,0 +1,11 @@
+apiVersion: podreaper.com.podreaper.com/v1alpha1
+kind: PodReaperConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: podreaper
+    app.kubernetes.io/managed-by: kustomize
+  name: podreaperconfig-sample
+spec:
+  namespaces:
+    - default
+    - test
