@@ -1,8 +1,16 @@
-# podreaper
-// TODO(user): Add simple overview of use/purpose
+# Pod Reaper
+
+Pod Reaper is a Kubernetes operator that helps manage orphaned pods in your cluster. It automatically detects and removes pods that have no owner references, helping to keep your cluster clean and resource-efficient.
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+
+Pod Reaper watches specified namespaces in your Kubernetes cluster for pods that have become orphaned. When it finds orphaned pods, it automatically deletes them to prevent resource waste and maintain cluster hygiene.
+
+Key features:
+- Configurable namespace monitoring
+- Automatic detection and removal of orphaned pods
+- Kubernetes-native implementation using custom resources
+- Simple setup and configuration
 
 ## Getting Started
 
@@ -132,4 +140,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
